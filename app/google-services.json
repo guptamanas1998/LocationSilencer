@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "366985927413",
+    "firebase_url": "https://location-silence.firebaseio.com",
+    "project_id": "location-silence",
+    "storage_bucket": "location-silence.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366985927413:android:bea3a306ef3bbb8f",
+        "android_client_info": {
+          "package_name": "com.example.manas_world.locationsilence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366985927413-o5c6o252qh71o985imtr8761c2qtt9uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manas_world.locationsilence",
+            "certificate_hash": "c0fe227bfa0257c1ddfebe7ef8b72f4084211f96"
+          }
+        },
+        {
+          "client_id": "366985927413-6ilffmk5bitni527r3vjbudqjmin5eqf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGdIxe5ukqXkK83_k9fJBpnr89ehGzjaI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366985927413-6ilffmk5bitni527r3vjbudqjmin5eqf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

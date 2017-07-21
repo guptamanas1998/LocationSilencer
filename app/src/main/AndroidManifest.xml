@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manas_world.locationsilence">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:configChanges="orientation"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <service android:name=".GPS_Service"/>
+        <service android:name=".GeofenceService"
+            android:exported="true"
+            android:enabled="true" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBjGQlMi14uD-r8rIaFD7z4uxC3A0FyBGw" />
+
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Selected_LocationsActivity"
+            android:label="Selected Locations"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Locations_SelectedActivity"
+            android:label="Selected Locations"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PlacePickerActivity"></activity>
+    </application>
+
+</manifest>
